@@ -1,8 +1,11 @@
 #!/bin/bash
-echo "Ramesh: : "Hi Suresh,how are you?  
 
-echo "Suresh: :Hello Ramesh, I am fine, how are you doing?" 
+$Person1=Ramesh
+$Person2=Suri
+echo "$Person1: : "Hi $Person2,how are you?  
 
-echo "Ramesh: : I am doing good Suresh, whats going on?" 
+echo "$Person2: :Hello $Person1, I am fine, how are you doing?" 
 
-echo "Suresh: : I started learning shell script" 
+echo "$Person1: : I am doing good $Person2, whats going on?" 
+
+echo "$Person2: : I started learning shell script" 
