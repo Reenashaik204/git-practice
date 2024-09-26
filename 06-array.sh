@@ -16,5 +16,5 @@ echo "Third fruit is: ${FRUITS[2]}"
 
   
 
-echo "First fruit is: ${FRUITS[@]}" 
+echo "All the fruits are: ${FRUITS[@]}" 
 
