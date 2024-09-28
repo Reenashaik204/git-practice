@@ -11,4 +11,4 @@ USERID=$( id -u )
         echo "Script is running with root privileges"    
     fi
 
-    dnf list installed git
+    dnf list installed 
