@@ -1,14 +1,16 @@
 #!/bin/bash
 
-USERID=$ ( id -u )
+USERID=$( id -u )
 
 R="\e[31m"
 G="\e[32m"
 y="\e[33m"
-N="\e0m"
+N="\e[0m"
 
 CHECK_ROOT(){
-    if [$USERID -ne 0]; then
+    if [ $USERID -ne 0 ]; then
       echo "Please run this script with root priviliges"
       exit 1
 }
+
+fi
