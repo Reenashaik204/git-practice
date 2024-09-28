@@ -11,4 +11,16 @@ USERID=$( id -u )
         echo "Script is running with root privileges"    
     fi
 
-    dnf list installed 
+    dnf list installed git
+
+    dnf list installed mysql
+
+    if [ $? ne 0 ]; then
+      echo "mysql not installed, going to install"
+      dnf install mysql -y
+        if [ $? ne 0]; then
+          echo "mysql installation not successfull"
+        else
+          echo "mysql instalation success"
+    else
+      echo "mysql is already installed"   
