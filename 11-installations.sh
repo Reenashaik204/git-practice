@@ -10,3 +10,5 @@ USERID=$( id -u )
     else    
         echo "Script is running with root privileges"    
     fi
+
+    dnf list installed git
