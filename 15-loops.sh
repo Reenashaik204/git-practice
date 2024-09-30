@@ -31,5 +31,6 @@ CHECK_ROOT
 # sh 15-loops.sh git mysql nginx postfix
 for package in $@ #refers to all args passed to it
 do 
+   echo "$package"
 
 done    
