@@ -38,6 +38,7 @@ do
        dnf install $package -y
        VALIDATE $? "Installing $package" 
     else
-       echo -e " $G $package is already isntalled, nothing to install $N"   
+       echo -e " $G $package is already isntalled, nothing to install $N"  
+    fi    
 
 done    
