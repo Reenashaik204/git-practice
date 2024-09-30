@@ -4,7 +4,7 @@ USERID=$( id -u )
 
 R="\e[31m"
 G="\e[32m"
-y="\e[33m"
+Y="\e[33m"
 N="\e[0m"
 
 CHECK_ROOT(){
@@ -32,9 +32,9 @@ CHECK_ROOT
 for package in $@ #refers to all args passed to it
 do 
    dnf list installed $package
-   if [ $? -ne 0]; then
+   if [ $? -ne 0 ]; then
 
-       echo -e "$Y $package is not installed, going ot install it $N"
+       echo -e "$Y $package is not installed, going to install it $N"
        dnf install $package -y
        VALIDATE $? "Installing $package" 
     else
