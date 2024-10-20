@@ -2,7 +2,7 @@
 
 SOURCE_DIR=/home/ec2-user/logs
 
-if [ -d "SOURCE_DIR" ]; then
+if [ -d "$SOURCE_DIR" ]; then
     echo   " source dir exists"
 else
     echo " source dir doesnt exist"
